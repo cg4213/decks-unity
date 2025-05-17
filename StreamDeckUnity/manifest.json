@@ -15,16 +15,29 @@
     },
     {
       "Icon": "Images/Unity",
-      "Name": "Execute Method",
+      "Name": "Execute Component Method",
       "States": [
         {
           "Image": "Images/Unity"
         }
       ],
-      "Tooltip": "Executes a Unity menu with the given path",
+      "Tooltip": "Executes a method of Component",
       "SupportedInMultiActions": true,
       "PropertyInspectorPath": "PropertyInspector/ExecuteMethod.html",
       "UUID": "com.nicollasr.streamdeckunity.executemethod"
+    },
+    {
+      "Icon": "Images/Unity",
+      "Name": "Execute Static Method",
+      "States": [
+        {
+          "Image": "Images/Unity"
+        }
+      ],
+      "Tooltip": "Executes a static method of a type",
+      "SupportedInMultiActions": true,
+      "PropertyInspectorPath": "PropertyInspector/ExecuteStaticMethod.html",
+      "UUID": "com.nicollasr.streamdeckunity.executestaticmethod"
     },
     {
       "Icon": "Images/Unity",

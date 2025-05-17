@@ -21,6 +21,7 @@
   </PropertyGroup>
   <ItemGroup>
     <None Remove="PropertyInspector\ExecuteMethod.html" />
+    <None Remove="PropertyInspector\ExecuteStaticMethod.html" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Fleck" Version="1.1.0" />
@@ -92,6 +93,11 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <CopyToPublishDirectory>Always</CopyToPublishDirectory>
       <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Include="PropertyInspector\ExecuteStaticMethod.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>Always</CopyToPublishDirectory>
     </Content>
     <Content Include="PropertyInspector\ExecuteMethod.html">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
