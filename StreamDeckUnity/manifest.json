@@ -15,6 +15,19 @@
     },
     {
       "Icon": "Images/Unity",
+      "Name": "Execute Method",
+      "States": [
+        {
+          "Image": "Images/Unity"
+        }
+      ],
+      "Tooltip": "Executes a Unity menu with the given path",
+      "SupportedInMultiActions": true,
+      "PropertyInspectorPath": "PropertyInspector/ExecuteMethod.html",
+      "UUID": "com.nicollasr.streamdeckunity.executemethod"
+    },
+    {
+      "Icon": "Images/Unity",
       "Name": "Reset Object(s)",
       "States": [
         {

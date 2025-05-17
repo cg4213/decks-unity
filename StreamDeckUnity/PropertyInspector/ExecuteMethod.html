@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,minimal-ui,viewport-fit=cover" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <title>PI</title>
+    <link rel="stylesheet" href="css/sdpi.css" />
+    <script src="js/pi.js"></script>
+</head>
+<body>
+    <div class="sdpi-wrapper">
+        <div class="sdpi-item">
+            <div class="sdpi-item-label empty"></div>
+            <button class="sdpi-info-button" onclick="openGettingStarted()">Getting Started</button>
+        </div>
+
+        <div class="sdpi-item">
+            <div class="sdpi-item-label">Component</div>
+            <textarea class="sdpi-item-value"
+                      rows="3"
+                      id="component"
+                      placeholder="Component Type Name"
+                      required>
+        </textarea>
+        </div>
+
+        <div class="sdpi-item">
+            <div class="sdpi-item-label">Method</div>
+            <textarea class="sdpi-item-value"
+                      rows="3"
+                      id="method"
+                      placeholder="Method Name"
+                      required>
+        </textarea>
+        </div>
+
+        <div class="sdpi-item alignTop">
+            <div class="sdpi-item-label empty"></div>
+            <details open class="noInnerMargins">
+                <summary>Notes</summary>
+                <p>
+                    This will execute the "Method" on "Component" on current selected GameObject
+                    <br />
+                    <button onclick="openExecuteMenuHelp()">Help</button>
+                </p>
+            </details>
+        </div>
+    </div>
+
+    <div class="sdpi-info-label hidden" style="top: -1000" value=""></div>
+</body>
+</html>

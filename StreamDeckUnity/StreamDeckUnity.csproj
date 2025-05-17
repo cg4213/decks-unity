@@ -20,6 +20,9 @@
     <PublishReadyToRun>false</PublishReadyToRun>
   </PropertyGroup>
   <ItemGroup>
+    <None Remove="PropertyInspector\ExecuteMethod.html" />
+  </ItemGroup>
+  <ItemGroup>
     <PackageReference Include="Fleck" Version="1.1.0" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
     <PackageReference Include="StreamDeck-Tools" Version="3.2.0" />
@@ -89,6 +92,11 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <CopyToPublishDirectory>Always</CopyToPublishDirectory>
       <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Include="PropertyInspector\ExecuteMethod.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>Always</CopyToPublishDirectory>
     </Content>
     <Content Include="PropertyInspector\SelectObject.html">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
