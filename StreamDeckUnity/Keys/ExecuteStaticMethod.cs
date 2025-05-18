@@ -18,7 +18,14 @@ namespace StreamDeckUnity.Keys
 
             if (IsUnityForeground(pid))
             {
-                MessageServer.Send(pid.ToString(), new ExecuteStaticMethodMessage(settings.TypeName, settings.MethodName));
+                MessageServer.Send(
+                    pid.ToString(), 
+                    new ExecuteStaticMethodMessage(
+                        settings.TypeName, 
+                        settings.MethodName,
+                        settings.ParamType,
+                        settings.ParamValue
+                        ));
             }
         }
     }
@@ -27,10 +34,15 @@ namespace StreamDeckUnity.Keys
     {
         public string TypeName { get; }
         public string MethodName { get; }
-        public ExecuteStaticMethodMessage(string typeName, string methodName)
+        public int ParamType { get; }
+        public string ParamValue { get; }
+
+        public ExecuteStaticMethodMessage(string typeName, string methodName, int paramType, string paramValue)
         {
             TypeName = typeName;
             MethodName = methodName;
+            ParamType = paramType;
+            ParamValue = paramValue;
         }
     }
 
@@ -40,5 +52,10 @@ namespace StreamDeckUnity.Keys
         public string TypeName { get; set; }
         [JsonProperty("methodname")]
         public string MethodName { get; set; }
+        [JsonProperty("paramtype")]
+        public int ParamType { get; set; }
+        [JsonProperty("paramvalue")]
+        public string ParamValue { get; set; }
+
     }
 }

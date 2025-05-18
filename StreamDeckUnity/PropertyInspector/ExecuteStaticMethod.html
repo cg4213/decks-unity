@@ -20,7 +20,7 @@
         <div class="sdpi-item">
             <div class="sdpi-item-label">TypeName</div>
             <textarea class="sdpi-item-value"
-                      rows="3"
+                      rows="1"
                       id="typename"
                       placeholder="Type Name"
                       required>
@@ -30,11 +30,34 @@
         <div class="sdpi-item">
             <div class="sdpi-item-label">MethodName</div>
             <textarea class="sdpi-item-value"
-                      rows="3"
+                      rows="1"
                       id="methodname"
                       placeholder="Method Name"
                       required>
         </textarea>
+        </div>
+
+        <div class="sdpi-item">
+            <div class="sdpi-item-label">ParamType</div>
+            <select id="paramtype" class="sdpi-item-value select" required>
+                <option value="0" selected="selected">None</option>
+                <option value="1">String</option>
+                <option value="2">Int</option>
+                <option value="3">Float</option>
+                <option value="4">Bool</option>
+                <option value="5">Vector3</option>
+                <option value="6">Color</option>
+            </select>
+        </div>
+
+        <div class="sdpi-item">
+            <div class="sdpi-item-label">ParamValue</div>
+            <textarea class="sdpi-item-value"
+                      rows="3"
+                      id="paramvalue"
+                      placeholder="ParamValue"
+                      required>
+            </textarea>
         </div>
 
         <div class="sdpi-item alignTop">
